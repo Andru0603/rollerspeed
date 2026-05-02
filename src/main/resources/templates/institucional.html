@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Institucional - Roller Speed</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Ajuste para que el navbar no tape el título al hacer clic en una sección */
+        section { 
+            scroll-margin-top: 80px; 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Insertar Navbar desde fragments.html -->
+    <div th:replace="~{fragments :: navbar}"></div>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">Nuestra Institución</h1>
+
+        <!-- ============================================ -->
+        <!-- SECCIÓN: MISIÓN                              -->
+        <!-- ============================================ -->
+        <section id="mision" class="mb-5">
+            <div class="card border-primary">
+                <div class="card-header bg-primary text-white">
+                    <h3>Misión</h3>
+                </div>
+                <div class="card-body">
+                    <p class="fs-5">
+                        Formar y potenciar jóvenes talentos en el patinaje, brindando una educación 
+                        integral que combina técnica, disciplina y valores deportivos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- SECCIÓN: VISIÓN                              -->
+        <!-- ============================================ -->
+        <section id="vision" class="mb-5">
+            <div class="card border-success">
+                <div class="card-header bg-success text-white">
+                    <h3>Visión</h3>
+                </div>
+                <div class="card-body">
+                    <p class="fs-5">
+                        Ser reconocidos como la escuela de patinaje líder en formación de jóvenes 
+                        promesas, destacando por nuestra excelencia técnica e innovación.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- SECCIÓN: VALORES                             -->
+        <!-- ============================================ -->
+        <section id="valores" class="mb-5">
+            <div class="card border-info">
+                <div class="card-header bg-info text-dark">
+                    <h3>Valores Corporativos</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush fs-5">
+                        <li class="list-group-item">
+                            ✅ <strong>Disciplina:</strong> Cumplir con constancia.
+                        </li>
+                        <li class="list-group-item">
+                            ❤️ <strong>Respeto:</strong> Empatía hacia compañeros.
+                        </li>
+                        <li class="list-group-item">
+                            🤝 <strong>Trabajo en equipo:</strong> Colaboración mutua.
+                        </li>
+                        <li class="list-group-item">
+                            🏆 <strong>Excelencia:</strong> Mejora continua.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Insertar Scripts de Bootstrap desde fragments.html -->
+    <div th:replace="~{fragments :: scripts}"></div>
+</body>
+</html>

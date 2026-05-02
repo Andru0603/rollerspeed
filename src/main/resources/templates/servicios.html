@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Servicios - Roller Speed</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- Insertar Navbar desde fragments.html -->
+    <div th:replace="~{fragments :: navbar}"></div>
+
+    <div class="container mt-5">
+        
+        <!-- Encabezado -->
+        <div class="text-center mb-5">
+            <h1 class="display-5">Nuestros Servicios</h1>
+            <p class="lead text-muted">Programas diseñados para todas las edades y niveles.</p>
+        </div>
+
+        <!-- Tarjetas de servicios -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            
+            <!-- ============================================ -->
+            <!-- SERVICIO 1: SEMILLEROS                       -->
+            <!-- ============================================ -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-primary">
+                    <div class="card-header bg-primary text-white text-center">
+                        <i class="bi bi-emoji-smile fs-1"></i>
+                        <h4 class="card-title mt-2">Semilleros (Iniciación)</h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Clases diseñadas para niños y adultos que nunca han patinado. Nos enfocamos en:
+                        </p>
+                        <ul>
+                            <li>Pérdida del miedo.</li>
+                            <li>Equilibrio y postura básica.</li>
+                            <li>Técnicas de caída segura.</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-transparent border-primary text-center">
+                        <small class="text-muted">Nivel: Principiante</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================ -->
+            <!-- SERVICIO 2: PATINAJE DE VELOCIDAD            -->
+            <!-- ============================================ -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-danger">
+                    <div class="card-header bg-danger text-white text-center">
+                        <i class="bi bi-lightning-charge fs-1"></i>
+                        <h4 class="card-title mt-2">Patinaje de Velocidad</h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Entrenamiento de alto rendimiento para competencia. Incluye:
+                        </p>
+                        <ul>
+                            <li>Técnica de empuje y curva.</li>
+                            <li>Resistencia aeróbica y anaeróbica.</li>
+                            <li>Preparación para torneos departamentales.</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-transparent border-danger text-center">
+                        <small class="text-muted">Nivel: Avanzado</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================ -->
+            <!-- SERVICIO 3: PATINAJE RECREATIVO              -->
+            <!-- ============================================ -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-success">
+                    <div class="card-header bg-success text-white text-center">
+                        <i class="bi bi-heart-pulse fs-1"></i>
+                        <h4 class="card-title mt-2">Patinaje Recreativo</h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Disfruta del patinaje como actividad física saludable sin la presión de competir.
+                        </p>
+                        <ul>
+                            <li>Rutas urbanas guiadas.</li>
+                            <li>Acondicionamiento físico.</li>
+                            <li>Comunidad y diversión.</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-transparent border-success text-center">
+                        <small class="text-muted">Nivel: Todos</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Insertar Scripts de Bootstrap desde fragments.html -->
+    <div class="mt-5">
+        <div th:replace="~{fragments :: scripts}"></div>
+    </div>
+</body>
+</html>

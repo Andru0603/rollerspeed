@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Roller Speed - Inicio</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- Insertar Navbar desde fragments.html -->
+    <div th:replace="~{fragments :: navbar}"></div>
+
+    <!-- Contenido principal -->
+    <div class="container mt-5 text-center">
+        <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">
+                    <i class="bi bi-speedometer2"></i> Bienvenidos a Roller Speed
+                </h1>
+                <p class="col-md-8 fs-4 mx-auto">
+                    La mejor escuela de patinaje de Santa Marta. Formamos ganadores con trabajo duro, amor y pasión.
+                </p>
+                <a class="btn btn-primary btn-lg" th:href="@{/servicios}" role="button">
+                    Conoce nuestros servicios
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Insertar Scripts de Bootstrap desde fragments.html -->
+    <div th:replace="~{fragments :: scripts}"></div>
+</body>
+</html>
